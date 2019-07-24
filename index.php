@@ -44,20 +44,19 @@
         // type: 'success',
         // title: 'Signed in successfully'
         // });
-        const {value: email} = await Swal.fire({
-        title: 'Input email address',
-        input: 'email',
-        inputPlaceholder: 'Enter your email address'
-        });
+        document.getElementById('as').onclick = function() {
+            const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+            });
 
-        if (email) {
-        Swal.fire('Entered email: ' + email)
-        }
-        // Swal.fire({});
-        $(document).ready(function() {
-            $('#sorting').DataTable();
-            $('#sorting_jenis').DataTable();
-        } );
+            Toast.fire({
+            type: 'success',
+            title: 'Signed in successfully'
+            });
+        };
         </script>
     </body>
 </html>

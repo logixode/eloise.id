@@ -138,7 +138,7 @@
             ?>
         </tbody>
     </table>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    <button type="button" id="as" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
         Launch demo modal
     </button>
 
