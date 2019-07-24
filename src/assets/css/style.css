@@ -6,6 +6,9 @@ body {
 	background-color: #007bff;
 	box-shadow: 0 5px 10px rgba(0,0,0,.15), 0 5px 10px rgba(0,0,0,.15);
 }
+a.nav-link:hover {
+    background-color: #535c68;
+}
 .card-body .card-text {
 	font-size: 35px;
 }

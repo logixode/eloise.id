@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg">
     <!-- <div class="container">  -->
         <!-- <a class="navbar-brand text-uppercase" href="#">Eloise.id</a> -->
-        <a class="navbar-brand ml-auto text-white" href="login.php">admin</a>
-        <a class="navbar-brand text-white" href="#">logout</a>
+        <a class="navbar-brand ml-auto text-white" href="login.php"><?= $_SESSION['username'] ?></a>
+        <!-- <a class="navbar-brand text-white" href="#">logout</a> -->
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -75,6 +75,10 @@
         </li>
          <li class="nav-item">
             <a class="nav-link <?= getActiveList('data-penjualan.php'); ?>" href="public/data-penjualan.php"><i class="fa fa-plus-square">&nbsp;</i><p>Tambah Data Penjualan</p>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?= getActiveList('data-penjualan.php'); ?>" href="src/logout.php"><i class="fa fa-sign-out-alt">&nbsp;</i><p>Logout</p>
           </a>
         </li>
       </ul>

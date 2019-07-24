@@ -34,6 +34,10 @@
         </div>	<!-- / row -->
         
 
+        <!-- <script type="text/javascript" src="src/assets/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="src/assets/js/jquery.js"></script>
+	    <script type="text/javascript" src="src/assets/js/bootstrap.bundle.js"></script> -->
+
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript">
             document.getElementById('edit').onclick = function() {
@@ -51,6 +55,7 @@
                 confirmButtonText: 'Delete!'
                 }).then((result) => {
                     if (result.value) {
+                        
                         Swal.fire(
                         'Terhapus!',
                         'Item sudah berhasil dihapus.',
