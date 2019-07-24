@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Input Data Penjualan</h2>
-    <form action="proses-inputpenjualan.php" method="POST">
+    <form action="public/proses-inputpenjualan.php" method="POST">
         <label for="jenis_kerudung">Jenis Kerudung</label>
         <select name="kode_jenis">
             <option value="1">Segi Empat</option>

@@ -17,9 +17,9 @@
         </tr>
         <?php
 
-            include "connection.php";
+            include "../config/connection.php";
 
-            $read   = mysqli_query($connect, "SELECT * FROM harga");
+            $read   = mysqli_query($connect, "SELECT * FROM tb_harga");
             $no     = 0;
 
             
