@@ -55,8 +55,6 @@
 </nav>
 <div class="dropdown-divider m-0"></div>
 
-<div class="row">
-
 
 <aside class="main-sidebar sidebar elevation-4" style="min-height: 923px;">
     <!-- Brand Logo -->
@@ -105,3 +103,5 @@
     <!-- /.sidebar -->
   </aside>
 
+
+  <div class="content-wrapper">
