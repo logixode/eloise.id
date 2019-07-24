@@ -1,18 +1,14 @@
-/* #side-menu a {
-	color: #9fb1c2;
+body {
+	background-color: #f4f6f9;
+	overflow-x: hidden;
 }
-#side-menu a:hover {
-	color: white;
-	background-color: #1ab394;
-	font-weight: bold;
-	display: block;
+.bg {
+	background-color: #007bff;
+	box-shadow: 0 5px 10px rgba(0,0,0,.15), 0 5px 10px rgba(0,0,0,.15);
 }
-#side-menu .active a {
-	color: #fff;
-	background-color: #27aae1;
-	font-weight: bold;
-} */
-
+.card-body .card-text {
+	font-size: 35px;
+}
 .nav-pills .nav-link{
 	border-radius:.10rem
 }
@@ -62,7 +58,7 @@ aside a {
 	left:0;
 	bottom:0;
 	transition:margin-left .3s ease-in-out,width .3s ease-in-out;
-	width:250px;
+	/* width:250px; */
 }
 .main-sidebar .brand-text,.sidebar .nav-link p,.sidebar .user-panel .info{
 	transition:margin-left .3s linear,opacity .5s ease
