@@ -70,30 +70,12 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column">
         <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
-          <i class="fa fa-home">&nbsp;</i>
-            <p>
-              Dashboard
-              <span class="right badge badge-danger">New</span>
-            </p>
+            <a class="nav-link <?= getActiveList('index.php'); ?>" href="add_post.php"><i class="fa fa-home">&nbsp;</i><p>Dashboard</p>
           </a>
         </li>
-        <li class="nav-item has-treeview menu-open">
-          <a href="#" class="nav-link active">
-            <i class="nav-icon fa fa-dashboard"></i>
-            <p>
-              Dashboard
-              <i class="right fa fa-angle-left"></i>
-            </p>
+         <li class="nav-item">
+            <a class="nav-link <?= getActiveList('data-penjualan.php'); ?>" href="public/data-penjualan.php"><i class="fa fa-plus-square">&nbsp;</i><p>Tambah Data Penjualan</p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="./index.php" class="nav-link active">
-                <i class="fa fa-circle-o nav-icon"></i>
-                <p>Dashboard v1</p>
-              </a>
-            </li>
-          </ul>
         </li>
       </ul>
     </nav>

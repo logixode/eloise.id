@@ -13,8 +13,8 @@
         case 'add_post.php':
             $TITLE_PAGE = "Add Post";
             break;
-        case 'edit_barang.php':
-            $TITLE_PAGE = "Edit Data Barang";
+        case 'login.php':
+            $TITLE_PAGE = "Eloise.id";
             break;
     }
 
