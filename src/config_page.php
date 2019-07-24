@@ -18,5 +18,5 @@
             break;
     }
 
-    $btn_edit = "<button class='btn btn-outline-warning'>Edit</button>";
-    $btn_delete = "<button class='btn btn-outline-danger'>Delete</button>";
+    $btn_edit = "<button id='edit' class='btn btn-outline-warning'>Edit</button>";
+    $btn_delete = "<button class='btn btn-outline-danger delete'>Delete</button>";

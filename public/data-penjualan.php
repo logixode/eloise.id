@@ -115,7 +115,7 @@
             
             while ($data_col = mysqli_fetch_array($read)) { 
                 $link_edit          = "public/daftar-harga.php?id=" . $data_col['id'] . 
-                $link_delete        = "public/data-penjualan.php?delete=" . $data_col['id'];
+                $link_delete        = "#";
                 $konversi_tanggal   = new DateTime($data_col['tanggal']);
                 ++$no; ?>
 
@@ -129,7 +129,7 @@
                     <td><?= $harga->setRupiah($data_col['laba']); ?></td>
                     <td>
                         <a href="<?= $link_edit; ?>"><?= $btn_edit ?></a>
-                        <a href="<?= $link_delete; ?>"><?= $btn_delete ?></a>
+                        <a href="#"><?= $btn_delete ?></a>
                     </td>
                 </tr>
                 

@@ -1,4 +1,13 @@
-<?php include "src/config_page.php"; ?>
+<?php 
+    session_start();
+
+    include "src/config_page.php"; 
+
+    if (!isset($_SESSION['username'])){
+        header("location:./login.php");
+    }
+    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,24 +36,29 @@
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript">
-//         Swal.fire({
-//   title: 'Error!',
-//   text: 'Do you want to continue',
-//   type: 'error',
-//   confirmButtonText: 'Cool'
-// });
-        // const Toast = Swal.mixin({
-        // toast: true,
-        // position: 'top-end',
-        // showConfirmButton: false,
-        // timer: 3000
-        // });
-
-        // Toast.fire({
-        // type: 'success',
-        // title: 'Signed in successfully'
-        // });
-        document.getElementById('as').onclick = function() {
+            document.getElementById('edit').onclick = function() {
+            
+            };
+            //document.getElementByClassName('delete').onclick = function() {
+            $('.delete').click(function() {
+                Swal.fire({
+                title: 'Anda yakin ingin menghapus item ini?',
+                text: "Setelah terhapus item tersebut tidak dapat dikembalikan!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Delete!'
+                }).then((result) => {
+                    if (result.value) {
+                        Swal.fire(
+                        'Terhapus!',
+                        'Item sudah berhasil dihapus.',
+                        'success'
+                        )
+                    }
+                })
+            });
             const Toast = Swal.mixin({
             toast: true,
             position: 'top-end',
@@ -56,7 +70,6 @@
             type: 'success',
             title: 'Signed in successfully'
             });
-        };
         </script>
     </body>
 </html>
