@@ -1,58 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg">
-    <!-- <div class="container">  -->
-        <!-- <a class="navbar-brand text-uppercase" href="#">Eloise.id</a> -->
-        <a class="navbar-brand ml-auto text-white" href="login.php"><?= $_SESSION['username'] ?></a>
-        <!-- <a class="navbar-brand text-white" href="#">logout</a> -->
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Data Penjualan</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Daftar Harga</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Pengaturan</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Data Penjualan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">PHP</a>
-                    <a class="dropdown-item" href="#">ASP</a>
-                    <a class="dropdown-item" href="#">AJAX</a>
-                    <a class="dropdown-item" href="#">JQuery</a>
-                    <a class="dropdown-item" href="#">MySQL</a>
-                    <a class="dropdown-item" href="#">CSS</a>
-                </div>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Software
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Sublime Text</a>
-                    <a class="dropdown-item" href="#">Atom</a>
-                    <a class="dropdown-item" href="#">VS Code</a>
-                    <a class="dropdown-item" href="#">JetBrains</a>
-                    <a class="dropdown-item" href="#">Notepad ++</a>
-                    <a class="dropdown-item" href="#">Brackets</a>
-                </div>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
-        </div> -->
-    <!-- </div> -->
+  <a class="navbar-brand text-white text-uppercase" href="<?= $base_url ?>htdocs/Final/eloise.id/">Eloise.id</a>
+  <a class="navbar-brand ml-auto text-white" href="login.php"><?= $_SESSION['username'] ?></a>
 </nav>
 <div class="dropdown-divider mb-3 mt-0"></div>
 <div class="row">
@@ -67,18 +15,22 @@
   <!-- Sidebar -->
   <div class="sidebar">
     <!-- Sidebar Menu -->
-    <nav class="mt-2">
+    <nav class="mt-3">
       <ul class="nav nav-pills nav-sidebar flex-column">
         <li class="nav-item">
-            <a class="nav-link <?= getActiveList('index.php'); ?>" href="add_post.php"><i class="fa fa-home">&nbsp;</i><p>Dashboard</p>
+            <a class="nav-link <?= getActiveList('index.php'); ?>" href="<?= $base_url ?>htdocs/Final/eloise.id/index.php"><i class="fa fa-home">&nbsp;</i><p>Dashboard</p>
           </a>
         </li>
          <li class="nav-item">
-            <a class="nav-link <?= getActiveList('data-penjualan.php'); ?>" href="public/data-penjualan.php"><i class="fa fa-plus-square">&nbsp;</i><p>Tambah Data Penjualan</p>
+            <a class="nav-link <?= getActiveList('input-data-penjualan.php'); ?>" href="<?= $base_url ?>htdocs/Final/eloise.id/public/input-data-penjualan.php"><i class="fa fa-plus-square">&nbsp;</i><p>Tambah Data Penjualan</p>
           </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?= getActiveList('data-penjualan.php'); ?>" href="src/logout.php"><i class="fa fa-sign-out-alt">&nbsp;</i><p>Logout</p>
+            <a class="nav-link <?= getActiveList('daftar-harga.php'); ?>" href="<?= $base_url ?>htdocs/Final/eloise.id/public/daftar-harga.php"><i class="fa fa-sign-out-alt">&nbsp;</i><p>Daftar Harga</p>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="src/logout.php"><i class="fa fa-sign-out-alt">&nbsp;</i><p>Logout</p>
           </a>
         </li>
       </ul>

@@ -2,7 +2,7 @@
     session_start();
     
     include "src/config_page.php"; 
-
+    include "base_url.php";
     include "config/connection.php";
 
     if (isset($_POST['username']) && isset($_POST['password'])) {

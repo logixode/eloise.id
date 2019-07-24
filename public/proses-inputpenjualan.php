@@ -1,6 +1,6 @@
 <?php
 
-include "config/connection.php";
+include "../config/connection.php";
 include "data_harga.php";
 
 $tanggal = date("Y-m-d");
@@ -32,4 +32,5 @@ $laba = $pemasukan - $pengeluaran;
 
 mysqli_query($connect, "INSERT INTO tb_data SET tanggal='$tanggal', kode_jenis='$kode_jenis', jumlah='$jumlah', pengeluaran='$pengeluaran', pemasukan='$pemasukan', laba='$laba'");
 
-header("location:public/data-penjualan.php");
+// print_r($_POST);
+header("location:{$base_url}input-data-penjualan.php");

@@ -107,14 +107,14 @@
         </thead>
         <tbody>
             <?php
-            $innerJoin_query = "SELECT tb_data.tanggal, tb_harga.data, tb_data.jumlah, tb_data.pengeluaran, tb_data.pemasukan, tb_data.laba
+            $innerJoin_query = "SELECT tb_data.id, tb_data.tanggal, tb_harga.data, tb_data.jumlah, tb_data.pengeluaran, tb_data.pemasukan, tb_data.laba
                                 FROM tb_data
                                 INNER JOIN tb_harga ON tb_data.kode_jenis = tb_harga.kode_jenis";
             $read   = mysqli_query($connect, $innerJoin_query);
             $no     = 0;
             
             while ($data_col = mysqli_fetch_array($read)) { 
-                $link_edit          = "public/daftar-harga.php?id=" . $data_col['id'] . 
+                $link_edit          = "public/update_data.php?id=" . $data_col['id'] . 
                 $link_delete        = "#";
                 $konversi_tanggal   = new DateTime($data_col['tanggal']);
                 ++$no; ?>
@@ -129,18 +129,15 @@
                     <td><?= $harga->setRupiah($data_col['laba']); ?></td>
                     <td>
                         <a href="<?= $link_edit; ?>"><?= $btn_edit ?></a>
-                        <a href="#"><?= $btn_delete ?></a>
+                        <a href="#"><?= btn_delete($data_col['id']) ?></a>
                     </td>
                 </tr>
                 
                 <?php 
-            } 
+                } 
             ?>
         </tbody>
     </table>
-    <button type="button" id="as" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
-    </button>
 
 </div>
 

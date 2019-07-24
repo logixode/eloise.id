@@ -53,7 +53,7 @@ aside a {
 }
 
 .main-sidebar{
-	z-index:1100;
+	z-index:1;
 	height:100vh;
 	overflow-y:hidden;
 	position:fixed;
@@ -104,7 +104,10 @@ aside a {
 }
 
 .nav-sidebar .nav-item>.nav-link{
-	position:relative
+	position:relative;
+	margin-bottom: .2rem;
+	height: 50px;
+	padding: 15px;
 }
 .nav-sidebar .nav-item>.nav-link>.float-right{
 	position:absolute;
@@ -176,4 +179,8 @@ aside a {
 }
 .flex-column {
     flex-direction: column !important;
+}
+
+.navbar {
+	z-index: 2
 }

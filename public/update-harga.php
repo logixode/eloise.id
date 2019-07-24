@@ -7,7 +7,7 @@
 
     // print_r($_POST);
 
-    $update_harga = "UPDATE harga SET harga='$harga' WHERE kode_jenis='$id'";
+    $update_harga = "UPDATE tb_harga SET harga='$harga' WHERE kode_jenis='$id'";
     mysqli_query($connect, $update_harga);
 
     header("location:daftar-harga.php");

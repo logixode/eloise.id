@@ -2,6 +2,7 @@
     session_start();
 
     include "src/config_page.php"; 
+    include "base_url.php";
 
     if (!isset($_SESSION['username'])){
         header("location:./login.php");
@@ -18,7 +19,6 @@
     </head>
 
 	<body>
-
         <?php include "src/nav_page.php"; ?>
         <!-- <div class="row"> -->
 
@@ -29,6 +29,7 @@
 
                 </div> <!-- / container-fluid -->
                 <?php include "src/footer_page.php"; ?>
+
             </div> <!-- / col-md-10 -->
 
         </div>	<!-- / row -->
@@ -44,7 +45,8 @@
             
             };
             //document.getElementByClassName('delete').onclick = function() {
-            $('.delete').click(function() {
+            $('.delete').click(function(v) {
+                console.log(v.target.id)
                 Swal.fire({
                 title: 'Anda yakin ingin menghapus item ini?',
                 text: "Setelah terhapus item tersebut tidak dapat dikembalikan!",
@@ -55,12 +57,12 @@
                 confirmButtonText: 'Delete!'
                 }).then((result) => {
                     if (result.value) {
-                        
-                        Swal.fire(
-                        'Terhapus!',
-                        'Item sudah berhasil dihapus.',
-                        'success'
-                        )
+                        window.location.href="src/delete_data.php?id="+v.target.id
+                        // Swal.fire(
+                        // 'Terhapus!',
+                        // 'Item sudah berhasil dihapus.',
+                        // 'success'
+                        // )
                     }
                 })
             });

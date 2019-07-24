@@ -10,13 +10,18 @@
         case 'index.php':
             $TITLE_PAGE = "Home";
             break;
-        case 'add_post.php':
-            $TITLE_PAGE = "Add Post";
+        case 'daftar-harga.php':
+            $TITLE_PAGE = "Daftar Harga";
             break;
         case 'login.php':
             $TITLE_PAGE = "Eloise.id";
             break;
     }
 
+
     $btn_edit = "<button id='edit' class='btn btn-outline-warning'>Edit</button>";
+    function btn_delete($id)
+    {
+        return "<button class='btn btn-outline-danger delete' id='".$id."' >Delete</button>";
+    }
     $btn_delete = "<button class='btn btn-outline-danger delete'>Delete</button>";
