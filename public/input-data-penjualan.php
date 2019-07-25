@@ -25,26 +25,30 @@
             <!-- col-md-10 -->
                 <div class="container-fluid content">
 
-    <h2>Input Data Penjualan</h2>
-    <form action="<?= $data_col ?>proses-inputpenjualan.php" method="POST">
-    
-        <div class="form-group container">
-            <label for="jenis_kerudung" class="col-form-label">Jenis Kerudung</label>
-            <select class='form-control' name="kode_jenis">
-                <option value="1">Segi Empat</option>
-                <option value="2">Pasmina Diamond</option>
-                <option value="3">Pasmina Ceruty</option>
-            </select>
-            <!-- <label for="jumlah" class="col-form-label">Jumlah : </label> -->
-            <!-- <input type="number" class="form-control" name="jumlah" placeholder="Jumlah barang" required> -->
-        </div>
-        <div class="form-group container">
-            <label for="jumlah" class="col-form-label">Jumlah : </label>
-            <input type="number" class="form-control" name="jumlah" placeholder="Jumlah barang" required>
-        </div>
-        <button class="btn btn-primary" type="Submit">Tambahkan</button>
-    </form>  
+                    <h2>Input Data Penjualan</h2>
+                    
+                    <div class="card p-3">
+                
+                    <form action="<?= $base_url ?>/public/proses-inputpenjualan.php" method="POST">
+                    
+                        <div class="form-group">
+                            <label for="jenis_kerudung" class="col-form-label">Jenis Kerudung</label>
+                            <select class='form-control' name="kode_jenis">
+                                <option value="1">Segi Empat</option>
+                                <option value="2">Pasmina Diamond</option>
+                                <option value="3">Pasmina Ceruty</option>
+                            </select>
+                            <!-- <label for="jumlah" class="col-form-label">Jumlah : </label> -->
+                            <!-- <input type="number" class="form-control" name="jumlah" placeholder="Jumlah barang" required> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="jumlah" class="col-form-label">Jumlah : </label>
+                            <input type="number" class="form-control" name="jumlah" placeholder="Jumlah barang" required>
+                        </div>
+                        <button class="btn btn-primary w-100" type="Submit">Tambahkan</button>
+                    </form>  
 
+            </div> <!-- / card -->
     </div> <!-- / container-fluid -->
         <?php include "../src/footer_page.php"; ?>
 

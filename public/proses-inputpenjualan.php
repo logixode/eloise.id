@@ -33,4 +33,4 @@ $laba = $pemasukan - $pengeluaran;
 mysqli_query($connect, "INSERT INTO tb_data SET tanggal='$tanggal', kode_jenis='$kode_jenis', jumlah='$jumlah', pengeluaran='$pengeluaran', pemasukan='$pemasukan', laba='$laba'");
 
 // print_r($_POST);
-header("location:{$base_url}input-data-penjualan.php");
+header("location:{$base_url}/index.php");

@@ -20,7 +20,9 @@
             header("location:./");
         }
         else {
+            //print_r($_POST);
             header("location:?notif=access");
+            //header("location:index.php");
         }
     }
 
@@ -130,7 +132,7 @@
             <div class="card p-5 bg-light">
                 <div class="text-center mt-2 my-4">
                     <h1>Eloise.id</h1>
-                </div>    
+                </div>
                 <form action="" class="" method="POST">
                     <?php if (isset($_GET['notif'])) { ?>
 						<div class="alert alert-danger mb-4">

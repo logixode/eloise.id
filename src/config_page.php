@@ -16,6 +16,9 @@
         case 'login.php':
             $TITLE_PAGE = "Eloise.id";
             break;
+        case 'input-data-penjualan.php':
+            $TITLE_PAGE = "Input Data Penjualan";
+            break;
     }
 
 

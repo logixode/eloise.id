@@ -59,7 +59,7 @@
 
 <div class="row text-center">
     <div class="col-md-3">
-        <div class="card text-white bg-dark center" >
+        <div class="card text-white center" style="background-color: #74b9ff;" >
             <div class="card-header"><h5 class="card-title">Jumlah Terjual</h5></div>
             <div class="card-body">
                 <p class="card-text"><?= countRow(); ?></p>
@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-dark mb-3 center" >
+        <div class="card text-white mb-3 center" style="background-color: #fdcb6e;" >
             <div class="card-header"><h5 class="card-title">Total Pengeluaran</h5></div>
             <div class="card-body">
                 <p class="card-text"><?= $harga->getHargaTotal('pengeluaran'); ?></p>
@@ -75,7 +75,7 @@
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-dark mb-3 center" >
+        <div class="card text-white mb-3 center" style="background-color: #00b894;" >
             <div class="card-header"><h5 class="card-title">Pemasukan Total</h5></div>
             <div class="card-body">
                 <p class="card-text"><?= $harga->getHargaTotal('pemasukan'); ?></p>
@@ -83,7 +83,7 @@
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-dark mb-3 center" >
+        <div class="card text-white mb-3 center" style="background-color: #0984e3;" >
             <div class="card-header"><h5 class="card-title">Pendapatan Bersih</h5></div>
             <div class="card-body">
                 <p class="card-text"><?= $harga->getHargaTotal('laba'); ?></p>

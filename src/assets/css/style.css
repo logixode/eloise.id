@@ -182,5 +182,7 @@ aside a {
 }
 
 .navbar {
-	z-index: 2
+	z-index: 2;
+    position: fixed;
+    width: 100%;
 }
