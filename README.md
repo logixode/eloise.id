@@ -19,6 +19,6 @@
 	- ambil file tb_eloise.sql lalu import sql nya di menu import dalam phpmyadmin
 	- arahkan ke folder database pilih tb_eloise.sql
 	- pilih go
-# Hak cipta : Rohmad Kurniadi
-# Tanggal Dibuat : 25/07/2019
+### Hak cipta : Rohmad Kurniadi
+### Tanggal Dibuat : 25/07/2019
  
