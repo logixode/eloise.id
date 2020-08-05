@@ -1,7 +1,7 @@
 # Tools yang Wajib ada di komputer
-	- Webserver (xampp, lampp, mamp)
-	- code Editor (ex :vscode, sublim text,notepad++)
-	- web Browser(ex :google crome, firefox) recomended(google crome)
+	- Webserver (ex : NGINX, Apache, etc)
+	- code Editor (ex :vscode, sublim text,notepad++, etc)
+	- web Browser(ex :google crome, firefox, etc) recomended(google crome)
 # petunjuk untuk instalasi web
 	- pastikan webserver sudah dijalankan
 	- buka drive c:/xampp/
